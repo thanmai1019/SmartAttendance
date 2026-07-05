@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Brand Palette -->
+    <color name="brand_primary">#0056D2</color> <!-- Strong Modern Blue -->
+    <color name="brand_primary_dark">#003A8C</color>
+    <color name="brand_secondary">#00B8D4</color>
+    <color name="brand_accent">#FF9800</color> <!-- Vibrant Accent -->
+
+    <!-- Surfaces & Backgrounds -->
+    <color name="surface_background">#F8FAFC</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_soft_blue">#EEF2FF</color>
+    <color name="surface_soft_success">#ECFDF5</color>
+    <color name="surface_soft_error">#FEF2F2</color>
+    <color name="surface_soft_warning">#FFFBEB</color>
+
+    <!-- Text Palette -->
+    <color name="text_primary">#0F172A</color> <!-- Slate 900 -->
+    <color name="text_secondary">#475569</color> <!-- Slate 600 -->
+    <color name="text_muted">#94A3B8</color> <!-- Slate 400 -->
+
+    <!-- Status Colors -->
+    <color name="success_green">#059669</color>
+    <color name="error_red">#DC2626</color>
+    <color name="warning_amber">#D97706</color>
+
+    <!-- Legacy / System -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

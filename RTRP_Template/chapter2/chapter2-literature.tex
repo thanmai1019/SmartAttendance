@@ -1,0 +1,47 @@
+\chapter{LITERATURE SURVEY} \label{c2}
+\section{Overview}
+Literature on attendance systems has evolved from manual practices to OTP-based, biometric, and IoT-enabled approaches. Each approach improves specific aspects but also introduces practical limitations. This chapter summarizes key approaches and identifies the gap addressed by the proposed system.
+
+\section{Manual and Semi-Digital Attendance}
+Traditional attendance methods are based on roll-call or paper registers. Semi-digital methods use spreadsheets or basic classroom apps. These methods are straightforward but lack strong verification and are highly dependent on manual checks.
+
+\section{OTP-based Attendance}
+OTP systems improve speed and reduce manual effort. Teacher shares a session code and students submit attendance. However, OTP sharing remains a major issue; if code is forwarded outside the classroom, unauthorized marking can still occur.
+
+\section{Biometric and Face-based Attendance}
+Face verification-based systems improve identity assurance and can significantly reduce impersonation. However, biometric-only systems do not independently confirm physical proximity to teacher location and may face reliability challenges under lighting and camera variations.
+
+\section{Proximity-based Attendance Models}
+Proximity-aware systems use Bluetooth, Wi-Fi, or geofencing to validate classroom presence. BLE is preferred in many mobile scenarios due to low power consumption and short-range suitability. However, proximity alone cannot confirm user identity.
+
+\section{Recent Technical Trends}
+Modern implementations increasingly combine multiple factors. As seen in recent computer-vision and deep-learning-enabled systems \cite{wang2022lip,liu2024camouflage}, practical deployments prioritize robust verification pipelines and context-aware checks. In higher education settings, student wellness and operational efficiency also influence adoption of digital workflows \cite{slavin2014medical}.
+
+\section{Comparative Analysis}
+\begin{table}[H]
+\centering
+\caption{Comparison of Common Attendance Approaches}
+\label{c2:tab1}
+\begin{tabular}{|L{3.2cm}|L{3.0cm}|L{3.0cm}|L{3.0cm}|}
+\hline
+\textbf{Method} & \textbf{Strength} & \textbf{Limitation} & \textbf{Proxy Risk}\\
+\hline
+Manual Roll Call & Simple and familiar & Time-consuming and error-prone & High\\
+\hline
+OTP-only & Fast and scalable & Code can be shared & Medium to High\\
+\hline
+Face-only & Identity-focused & No proximity assurance & Medium\\
+\hline
+Bluetooth-only & Presence-focused & No identity assurance & Medium\\
+\hline
+Multi-factor (OTP + BLE + Face) & Balanced security and usability & More integration effort & Low\\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Research Gap}
+From the surveyed methods, the key gap is the lack of integrated, classroom-practical, multi-factor validation. Most systems prioritize only one dimension: speed, proximity, or identity. The proposed Smart Attendance System addresses this by enforcing a sequence of checks before attendance insertion.
+
+\section{Conclusion of Literature Survey}
+The survey indicates that multi-factor attendance is better suited for real classroom conditions than single-factor systems. Therefore, combining OTP session control, BLE proximity, and face verification forms a practical and secure attendance framework.
+

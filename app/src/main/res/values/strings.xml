@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">SmartAttendance</string>
+    <string name="app_name_pro">SmartAttendance Pro</string>
+    <string name="teacher_dashboard_title">Teacher Dashboard</string>
+    <string name="teacher_dashboard_subtitle">Session control and live attendance</string>
+    <string name="student_dashboard_title">Student Dashboard</string>
+    <string name="student_dashboard_subtitle">Secure attendance submission</string>
+    <string name="start_attendance">Start Attendance</string>
+    <string name="end_session">End Session</string>
+    <string name="refresh">Refresh</string>
+    <string name="view_attendance">View Attendance</string>
+    <string name="show_students">Show Students</string>
+    <string name="capture_face">Capture Face</string>
+    <string name="submit_attendance">Submit Attendance</string>
+    <string name="submitting_attendance">Submitting...</string>
+    <string name="attendance_list_title">Attendance Records</string>
+    <string name="student_list_title">Attendance List</string>
+    <string name="label_date_time">Date / Time</string>
+    <string name="session_overview_title">Session Overview</string>
+    <string name="live_stats_title">Live Insights</string>
+    <string name="session_control_title">Session Control</string>
+    <string name="teacher_quick_actions">Quick Actions</string>
+    <string name="student_profile_title">Student Details</string>
+    <string name="student_name_hint">Student name</string>
+    <string name="student_id_hint">Student ID</string>
+    <string name="otp_hint">OTP code</string>
+    <string name="face_capture_title">Face Verification</string>
+    <string name="face_capture_subtitle">Capture a clear live face image before submitting attendance.</string>
+    <string name="session_status_idle">No active session</string>
+    <string name="session_code_placeholder">------</string>
+    <string name="session_time_default">05:00</string>
+    <string name="session_id_placeholder">Session ID: --</string>
+    <string name="session_id_text">Session ID: %1$s</string>
+    <string name="total_count_default">Total Count: 0</string>
+    <string name="time_left_default">Time Left: --</string>
+    <string name="total_count_text">Total Count: %1$d</string>
+    <string name="time_left_text">Time Left: %1$s</string>
+    <string name="session_running">Session Running</string>
+    <string name="restart_attendance">Restart Attendance</string>
+    <string name="session_restored_message">A live session already exists. Restored it here.</string>
+    <string name="session_started_message">Attendance session started.</string>
+    <string name="session_none_end_message">There is no active session to end.</string>
+    <string name="session_end_manual">Session ended.</string>
+    <string name="session_end_expired">Session expired.</string>
+    <string name="session_refresh_none">No active session to refresh.</string>
+    <string name="session_refresh_success">Attendance refreshed.</string>
+    <string name="session_open_list_prompt">Start a session first to view attendance.</string>
+    <string name="session_active_exists">An attendance session is already active.</string>
+    <string name="face_capture_cancelled">Face capture was cancelled.</string>
+    <string name="camera_permission_required">Camera permission is required for face capture.</string>
+    <string name="error_enter_name">Enter your name.</string>
+    <string name="error_enter_student_id">Enter your student ID.</string>
+    <string name="error_invalid_otp">Enter the valid 6-character OTP.</string>
+    <string name="error_capture_face">Capture your face before submitting attendance.</string>
+    <string name="error_invalid_live_otp">Invalid OTP. Ask the teacher for the active code.</string>
+    <string name="error_session_expired">This attendance session has expired.</string>
+    <string name="error_duplicate_attendance">Attendance already submitted for this student ID.</string>
+    <string name="attendance_submit_success">Attendance marked successfully.</string>
+    <string name="draft_form_cleared">Form cleared.</string>
+    <string name="pending_retry_notice">Saved locally and will retry automatically.</string>
+    <string name="clear_form">Clear Form</string>
+    <string name="attendance_empty_message">No attendance submitted for this session yet.</string>
+    <string name="student_list_empty">No students marked for this session.</string>
+    <string name="attendance_session_meta">Session: %1$s\nID: %2$s</string>
+    <string name="attendance_session_meta_single">Session: %1$s | ID: %2$s</string>
+    <string name="attendance_item_student_id">Student ID: %1$s</string>
+    <string name="attendance_item_marked_at">Marked At: %1$s</string>
+    <string name="attendance_present">Present</string>
+    <string name="session_status_active">Active</string>
+    <string name="session_status_expired">Session Expired</string>
+    <string name="face_status_pending">Face not captured</string>
+    <string name="face_status_captured">Face captured</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+</resources>

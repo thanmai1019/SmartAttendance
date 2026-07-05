@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_teacher_home"
+        android:title="@string/teacher_dashboard_title" />
+    <item
+        android:id="@+id/action_view_attendance"
+        android:title="@string/show_students" />
+    <item
+        android:id="@+id/action_open_student"
+        android:title="@string/student_dashboard_title" />
+</menu>

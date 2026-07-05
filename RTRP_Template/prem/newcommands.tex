@@ -1,0 +1,67 @@
+%\floatstyle{boxed}
+%\restylefloat{figure}
+\renewcommand{\figurename}{Fig.}
+\newcommand{\ignore}[1]{}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\RequirePackage[left=1.5in,right=1in,top=1in,bottom=1in,nohead]{geometry}%[2002/07/08]
+\newcommand{\cchapter}[1]{\chapter[#1]{\centering #1}}
+\renewcommand{\baselinestretch}{1.62}
+%\renewcommand{\bibname}{\protect\centerline{REFERENCES}} % For reference center align
+
+\renewcommand{\bibname}{References}
+%\renewcommand{\bibname}{\protect\centerline{References}}
+
+%\newcommand{\setbibname}[1]{\bibname[#1]{\centering #1}}
+
+\renewcommand{\contentsname} {CONTENTS} 
+\renewcommand*\listfigurename{List of Figures}
+\renewcommand*\listtablename{List of Tables}
+
+
+
+%\renewcommand{\subsection}[1]{\subsubsection*{\large #1}\addcontentsline{toc}{subsection}{\qquad #1}}
+\setcounter{secnumdepth}{5} % for Subsubsubsection
+%\setcounter{tocdepth}{5} %Subsubsubsection Apears in TOC
+
+\makeatletter
+\newcounter{algorithmbis}
+\setcounter{algorithmbis}{0}
+
+%To Change margin for a particular content or  page
+%\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+%\let\endchangemargin=\endlist 
+%use \begin{chnagemargin}{right}{left}Text\end{chnagemargin}
+
+%for Hypothesis
+%\newtheorem{hypo}{Hypothesis}[chapter]
+%\newtheorem{hypolist}{Hypothesis}[chapter]
+%
+%\newcommand*\hypothesis[1]{%
+%	\stepcounter{hypolist}%
+%	\addtheoremline{hypolist}{#1}%
+%	\begin{hypo}#1\end{hypo}
+%}
+%\AtBeginEnvironment{tabular}{\footnotesize}
+\pagestyle{plain}
+%\setfloatadjustment{table}{\footnotesize\centering}
+\renewcommand{\thealgorithmbis}{\thesection.\arabic{algorithmbis}}
+\def\algorithmbis{\@ifnextchar[{\@algorithmbisa}{\@algorithmbisb}}
+\def\@algorithmbisa[#1]{%
+  \refstepcounter{algorithmbis}
+  \trivlist
+  \leftmargin\z@
+  \itemindent\z@
+  \labelsep\z@
+  \item[\parbox{\textwidth}{%
+    \hrule
+    \hrule
+    \noindent\strut\textbf{Algorithm \thealgorithmbis} #1
+    \hrule
+  }]\hfil\vskip0em%
+}
+\def\@algorithmbisb{\@algorithmbisa[]}
+\def\endalgorithmbis{\hfil\vskip-1em\hrule\endtrivlist}
+\makeatother

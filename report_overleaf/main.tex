@@ -1,0 +1,408 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{ragged2e}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+\onehalfspacing
+
+\titleformat{\chapter}[display]
+  {\bfseries\centering\Large}
+  {CHAPTER \thechapter}
+  {1ex}
+  {\Large}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+% -------------------- TITLE PAGE --------------------
+\begin{titlepage}
+\begin{center}
+\vspace*{0.3cm}
+{\Large \textbf{A Real-time Research Project Report}}\\[0.4cm]
+{\large on}\\[0.4cm]
+{\LARGE \textbf{SMART ATTENDANCE SYSTEM USING BLUETOOTH AND VERIFICATION}}\\[0.6cm]
+{\large submitted in partial fulfillment of the requirements for the award of the degree of}\\[0.3cm]
+{\Large \textbf{BACHELOR OF TECHNOLOGY}}\\[0.2cm]
+{\large in}\\[0.2cm]
+{\Large \textbf{COMPUTER SCIENCE \& ENGINEERING}}\\[0.7cm]
+
+{\large by}\\[0.2cm]
+{\large Ms. M. Thanmai \hspace{0.4cm} (24WH1A05D0)}\\
+{\large Ms. M. Tejaswini \hspace{0.4cm} (24WH1A05D1)}\\
+{\large Ms. R. Vaishnavi \hspace{0.4cm} (24WH1A05J3)}\\[0.7cm]
+
+{\large under the esteemed guidance of}\\[0.2cm]
+{\large \textbf{Dr. R. Suneetha Rani}}\\
+{\large Professor}\\
+{\large Department of Computer Science \& Engineering}\\[0.7cm]
+
+{\large Department of Computer Science \& Engineering}\\
+{\large \textbf{BVRIT HYDERABAD College of Engineering for Women}}\\
+{\small (NAAC Accredited-A Grade \textbar\ NBA Accredited B.Tech. (EEE, ECE \& CSE))}\\
+{\small (Approved by AICTE, New Delhi and Affiliated to JNTUH, Hyderabad)}\\
+{\small Bachupally, Hyderabad -- 500090}\\[0.5cm]
+{\large April, 2026}
+\end{center}
+\end{titlepage}
+
+% -------------------- CERTIFICATE --------------------
+\clearpage
+\thispagestyle{empty}
+\begin{center}
+{\Large \textbf{BVRIT HYDERABAD}}\\
+{\large College of Engineering for Women}\\
+{\small (NAAC Accredited-A Grade \textbar\ NBA Accredited B.Tech. (EEE, ECE \& CSE))}\\
+{\small (Approved by AICTE, New Delhi and Affiliated to JNTUH, Hyderabad)}\\
+{\small Bachupally, Hyderabad -- 500090}\\[0.4cm]
+{\large \textbf{Department of Computer Science \& Engineering}}\\[0.6cm]
+{\Large \textbf{CERTIFICATE}}
+\end{center}
+
+This is to certify that the Real-time Research Project report on \textbf{``SMART ATTENDANCE SYSTEM USING BLUETOOTH AND VERIFICATION''} is a bonafide work carried out by \textbf{Ms. M. Thanmai (24WH1A05D0), Ms. M. Tejaswini (24WH1A05D1), and Ms. R. Vaishnavi (24WH1A05J3)} in partial fulfillment for the award of B.Tech degree in Computer Science \& Engineering, BVRIT HYDERABAD College of Engineering for Women, Bachupally, Hyderabad, affiliated to Jawaharlal Nehru Technological University Hyderabad, Hyderabad under the guidance and supervision of the undersigned.
+
+The results embodied in this project report have not been submitted to any other University or Institute for the award of any degree or diploma.
+
+\vspace{1.8cm}
+\begin{tabular}{p{0.45\textwidth}p{0.45\textwidth}}
+\textbf{Internal Guide} & \textbf{Head of the Department} \\
+Dr. R. Suneetha Rani & Dr. Aruna Rao S L \\
+Professor & Professor \\
+Department of CSE & Department of CSE \\
+\end{tabular}
+
+\vspace{1.8cm}
+\textbf{External Examiner}
+
+% -------------------- DECLARATION --------------------
+\clearpage
+\thispagestyle{empty}
+\begin{center}
+{\Large \textbf{DECLARATION}}
+\end{center}
+
+We hereby declare that the work presented in this Real-time Research Project entitled \textbf{``SMART ATTENDANCE SYSTEM USING BLUETOOTH AND VERIFICATION''} submitted towards completion of project work in III Year II Semester of B.Tech in CSE at BVRIT HYDERABAD College of Engineering for Women, Hyderabad, is an authentic record of our original work carried out under the guidance of \textbf{Dr. R. Suneetha Rani}, Professor, Department of CSE.
+
+\vspace{2.0cm}
+\begin{tabular}{p{0.3\textwidth}p{0.3\textwidth}p{0.3\textwidth}}
+\centering Ms. M. Thanmai & \centering Ms. M. Tejaswini & \centering Ms. R. Vaishnavi \\
+\centering (24WH1A05D0) & \centering (24WH1A05D1) & \centering (24WH1A05J3) \\
+\end{tabular}
+
+% -------------------- ACKNOWLEDGEMENT --------------------
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+\begin{center}
+{\Large \textbf{ACKNOWLEDGEMENT}}
+\end{center}
+
+We sincerely express our gratitude to \textbf{Dr. R. Suneetha Rani}, Professor, Department of Computer Science \& Engineering, for her continuous guidance, support, and valuable suggestions throughout the development of this project.
+
+We are thankful to \textbf{Dr. Aruna Rao S L}, Head of the Department of CSE, for providing the required facilities, motivation, and academic environment to complete this project successfully.
+
+We also thank all the faculty members of the Department of CSE for their encouragement and constructive feedback during the project phases. We acknowledge the support provided by our institution, \textbf{BVRIT HYDERABAD College of Engineering for Women}, in carrying out this work.
+
+Finally, we are grateful to our parents and friends for their constant support and motivation.
+
+% -------------------- ABSTRACT --------------------
+\clearpage
+\begin{center}
+{\Large \textbf{ABSTRACT}}
+\end{center}
+
+The Smart Attendance System using Bluetooth and Verification is designed to automate classroom attendance and reduce proxy attendance through multi-layer verification. Traditional attendance methods consume classroom time and are vulnerable to manual errors and impersonation. The proposed system addresses these challenges by integrating One-Time Password (OTP) validation, Bluetooth proximity verification, and face-based identity verification in a mobile application.
+
+In the proposed workflow, a teacher starts a live attendance session for a selected class date and period. The system generates a time-bound OTP and starts Bluetooth broadcasting from the teacher device. Students must enter the correct OTP, pass Bluetooth proximity verification to prove classroom presence, and complete face verification before attendance can be marked. Attendance is stored in the backend with student identity, class slot, session code, and timestamp.
+
+The application is implemented using Kotlin and Android Studio with Jetpack Compose for UI, Kotlin Coroutines for asynchronous handling, and Supabase for backend services such as authentication and database operations. The design follows a layered approach comprising UI, logic, and backend integration. Additional teacher-side modules support live attendance monitoring, slot-wise history, and student-level attendance reporting.
+
+This project demonstrates a practical and scalable smart attendance solution that improves accuracy, minimizes manual effort, and strengthens attendance integrity in academic institutions.
+
+% -------------------- TOC / LOF / LOT --------------------
+\clearpage
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+
+% -------------------- MAIN CONTENT --------------------
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\chapter{INTRODUCTION}
+\section{Background}
+Attendance management is an essential academic activity used for monitoring student participation and discipline. In many institutions, attendance is still collected using manual roll calls or basic digital forms. These methods are time-consuming, interrupt teaching flow, and are vulnerable to proxy attendance. A secure, quick, and user-friendly attendance mechanism is therefore required for modern classrooms.
+
+\section{Problem Statement}
+The major challenges in classroom attendance systems are unauthorized attendance marking, identity impersonation, and lack of real-time validation. OTP-only systems can still be misused if students share codes outside the classroom. Face-only systems may fail without location context. Bluetooth-only systems cannot independently verify identity. The problem is to design a reliable system that combines presence verification and identity verification before recording attendance.
+
+\section{Objective}
+The objective of this project is to build a professional mobile attendance system that:
+\begin{itemize}[leftmargin=1.5cm]
+\item allows teachers to start controlled attendance sessions,
+\item enables students to mark attendance only after multi-step verification,
+\item prevents duplicate and invalid attendance entries,
+\item provides transparent attendance records for faculty review.
+\end{itemize}
+
+\section{Scope}
+This project is scoped for classroom-level attendance in undergraduate institutions. The implemented system includes teacher and student dashboards, secure session management, OTP validation, Bluetooth proximity verification, face verification integration, and Supabase-based record management.
+
+\section{Contributions}
+The project contributes:
+\begin{itemize}[leftmargin=1.5cm]
+\item a multi-factor attendance marking workflow,
+\item real-time session control and monitoring,
+\item student-wise and slot-wise attendance reporting,
+\item a practical architecture for future upgrades like anti-spoofing and analytics.
+\end{itemize}
+
+\chapter{LITERATURE SURVEY}
+\section{Conventional Attendance Methods}
+Manual attendance is widely used but has operational limitations in large classes. Even digital spreadsheet-based systems require manual verification and are prone to input errors and delayed updates.
+
+\section{OTP-based Attendance Systems}
+OTP-based attendance systems improve speed and automation. However, OTP sharing among students can still enable proxy attendance if no contextual checks are applied.
+
+\section{Biometric Attendance Systems}
+Face verification and biometric attendance improve identity assurance. Yet, camera quality, lighting variation, and enrollment consistency directly impact recognition reliability.
+
+\section{Proximity-based Attendance Systems}
+Bluetooth and location-based attendance systems improve classroom presence validation. BLE-based solutions are energy efficient and suitable for short-range detection, but proximity alone cannot verify identity.
+
+\section{Research Gap}
+Most systems rely on a single verification layer. The gap is a practical classroom solution that combines time-bound session control, OTP, proximity verification, and identity verification while preserving usability for teachers and students.
+
+\section{Proposed Approach Relevance}
+The proposed system combines complementary checks in a structured sequence. This layered strategy reduces abuse opportunities and provides stronger confidence in attendance integrity compared with single-factor methods.
+
+\chapter{SYSTEM ANALYSIS AND REQUIREMENTS}
+\section{Existing System Analysis}
+Existing attendance workflows in many classrooms are either manual or partially automated. They often lack integrated validation and do not provide robust anti-proxy protection.
+
+\section{Proposed System Analysis}
+The proposed system introduces controlled attendance sessions where every attendance submission is validated against:
+\begin{enumerate}[leftmargin=1.5cm]
+\item active class session and valid OTP,
+\item student proximity to teacher via Bluetooth,
+\item face verification outcome.
+\end{enumerate}
+
+\section{Functional Requirements}
+\begin{enumerate}[leftmargin=1.5cm]
+\item Teacher login and student login/registration.
+\item Session creation with class date, class period, OTP, and expiration.
+\item Student OTP validation against active session.
+\item Bluetooth verification for proximity detection.
+\item Face enrollment and verification integration.
+\item Attendance submission with duplicate prevention.
+\item Teacher attendance views: live list, history, and reports.
+\end{enumerate}
+
+\section{Non-Functional Requirements}
+\begin{itemize}[leftmargin=1.5cm]
+\item Usability: guided workflow, clear status feedback.
+\item Performance: low-latency session validation and submission.
+\item Reliability: robust error handling and retry paths.
+\item Security: authenticated backend access and session validity checks.
+\item Scalability: support for multiple sessions over semesters.
+\end{itemize}
+
+\section{Hardware and Software Requirements}
+\begin{table}[H]
+\centering
+\caption{Hardware and Software Requirements}
+\begin{tabular}{p{0.35\textwidth}p{0.55\textwidth}}
+\toprule
+\textbf{Component} & \textbf{Specification} \\
+\midrule
+Development System & Windows 10/11, minimum 8 GB RAM \\
+IDE & Android Studio \\
+Language & Kotlin \\
+UI Framework & Jetpack Compose / Material Design \\
+Backend & Supabase (Auth, REST API, Database) \\
+Connectivity & Bluetooth Low Energy (BLE), Internet \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\chapter{SYSTEM DESIGN AND ARCHITECTURE}
+\section{Overall Architecture}
+The application follows a layered architecture with clear separation between user interface, business logic, and backend integration.
+
+\begin{figure}[H]
+\centering
+\fbox{\parbox{0.85\textwidth}{
+\centering
+Teacher UI / Student UI \\
+$\downarrow$ \\
+Session Logic, OTP Validation, Verification Flow \\
+$\downarrow$ \\
+Supabase Auth + Database (Profiles, Sessions, Attendance)
+}}
+\caption{High-level system architecture}
+\end{figure}
+
+\section{Module Design}
+\subsection{Teacher Module}
+Teacher module supports session creation, live OTP display, timer updates, live student list, and historical attendance analysis.
+
+\subsection{Student Module}
+Student module supports session validation, Bluetooth and face verification flow, and attendance submission with guarded transitions.
+
+\subsection{Backend Module}
+Backend module handles authentication, session persistence, attendance records, and query APIs for report generation.
+
+\section{Database Design}
+\begin{table}[H]
+\centering
+\caption{Core Database Tables}
+\begin{tabular}{p{0.2\textwidth}p{0.7\textwidth}}
+\toprule
+\textbf{Table} & \textbf{Purpose} \\
+\midrule
+profiles & Stores user identity, role, roll number, face enrollment data \\
+sessions & Stores teacher session data (OTP, class date/period, expiry, status) \\
+attendance & Stores validated attendance submissions with verification metadata \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Security and Validation Design}
+The design enforces multi-level validation before database insertion. A student can submit attendance only when session, proximity, and face checks pass. Duplicate checks prevent repeated marking in the same class slot.
+
+\chapter{IMPLEMENTATION}
+\section{Technology Stack}
+The project is implemented using Kotlin and Android Studio. UI components use Jetpack Compose and Material design patterns. Coroutines are used for asynchronous tasks such as network calls, verification flow transitions, and periodic refresh operations.
+
+\section{Teacher Workflow Implementation}
+Teacher selects class date and period and starts session. The app requests Bluetooth permissions only when needed and handles Bluetooth enable through system dialog. On successful start, OTP is generated and session details are saved in backend. Live session view displays OTP, timer, and ongoing attendance list.
+
+\section{Student Workflow Implementation}
+Student selects class slot and enters OTP. If session validation succeeds, student performs Bluetooth and face verification in guided order. Mark Attendance action is enabled only when required checks pass. Submission request is then sent to backend with session and student identifiers.
+
+\section{Data Synchronization and Error Handling}
+The app uses refresh methods for sessions and attendance records. Runtime permission denials, network timeouts, invalid OTP, expired sessions, and duplicate attendance attempts are handled with clear feedback messages and retry paths.
+
+\section{Algorithms Used}
+\subsection{Session Validation Algorithm}
+\begin{enumerate}[leftmargin=1.5cm]
+\item Read student OTP and selected slot.
+\item Fetch active sessions and match by OTP.
+\item Validate class date, period, and expiration.
+\item Proceed only if all checks pass.
+\end{enumerate}
+
+\subsection{Attendance Submission Guard}
+\begin{enumerate}[leftmargin=1.5cm]
+\item Ensure Bluetooth and face verification states are successful.
+\item Ensure verification freshness window is valid.
+\item Check duplicate attendance for session/slot.
+\item Insert attendance record and return response.
+\end{enumerate}
+
+\section{Important Screens}
+\begin{table}[H]
+\centering
+\caption{Implemented Core Screens}
+\begin{tabular}{p{0.32\textwidth}p{0.58\textwidth}}
+\toprule
+\textbf{Screen} & \textbf{Purpose} \\
+\midrule
+Login / Sign-up & User authentication and onboarding \\
+Teacher Live Session & One-tap session control with OTP and timer \\
+Teacher Attendance Tabs & Live list, slot process, marked students, reports \\
+Student Mark Attendance & Guided OTP + verification + submit flow \\
+History and Profile Screens & Review records and account information \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\chapter{RESULTS AND DISCUSSION}
+\section{Experimental Outcomes}
+The implemented system successfully demonstrates real-time attendance marking with multi-factor checks. Teacher can start and end sessions, monitor live attendance, and review historical data. Student can mark attendance only after valid OTP and verification sequence.
+
+\section{Observed Benefits}
+\begin{itemize}[leftmargin=1.5cm]
+\item Reduced attendance marking time in class.
+\item Improved trust in attendance authenticity.
+\item Reduced proxy attendance opportunities.
+\item Better visibility for teachers through slot-wise reports.
+\end{itemize}
+
+\section{Limitations}
+Bluetooth signal quality depends on device environment and hardware. Face verification quality depends on lighting and camera capture conditions. Stable internet is required for consistent backend synchronization.
+
+\section{Discussion}
+A practical attendance product should balance security and usability. This implementation achieves that by combining constrained session controls with guided user flow. Further improvements can increase robustness for large classrooms and varied device conditions.
+
+\chapter{CONCLUSION AND FUTURE SCOPE}
+\section{Conclusion}
+The Smart Attendance System using Bluetooth and Verification provides an effective and practical approach for modern classroom attendance management. It addresses the major issues of proxy attendance, manual delays, and weak validation by combining OTP, BLE proximity, and face verification in a controlled workflow.
+
+The final system is implementation-ready, scalable, and suitable for academic adoption with minimal operational changes for faculty and students.
+
+\section{Future Scope}
+\begin{itemize}[leftmargin=1.5cm]
+\item Improved face anti-spoofing and confidence tuning.
+\item Department-level analytics dashboard and exports.
+\item Timetable integration and automated period mapping.
+\item Notification and alert workflows for absentees.
+\item Offline queue with delayed sync for weak internet areas.
+\end{itemize}
+
+% -------------------- REFERENCES --------------------
+\clearpage
+\begin{center}
+{\Large \textbf{REFERENCES}}
+\end{center}
+\begin{enumerate}[leftmargin=1.2cm]
+\item Android Developers. Bluetooth permissions and setup guidelines. \url{https://developer.android.com/guide/topics/connectivity/bluetooth}
+\item Android Developers. Runtime permission best practices. \url{https://developer.android.com/privacy-and-security/minimize-permission-requests}
+\item Supabase Documentation. Auth and PostgREST APIs. \url{https://supabase.com/docs}
+\item TensorFlow Lite Documentation. On-device ML deployment. \url{https://www.tensorflow.org/lite}
+\item Kotlin Coroutines Documentation. Asynchronous programming in Kotlin. \url{https://kotlinlang.org/docs/coroutines-overview.html}
+\item Jetpack Compose Documentation. Modern Android UI toolkit. \url{https://developer.android.com/jetpack/compose}
+\end{enumerate}
+
+% -------------------- APPENDIX (5 EMPTY PAGES) --------------------
+\clearpage
+\appendix
+\begin{center}
+{\Large \textbf{APPENDIX: OUTPUT SCREENSHOTS}}
+\end{center}
+\addcontentsline{toc}{chapter}{APPENDIX: OUTPUT SCREENSHOTS}
+
+\clearpage \thispagestyle{plain} \null \vfill \begin{center}\textbf{Screenshot Page 1}\end{center}\vfill \clearpage
+\clearpage \thispagestyle{plain} \null \vfill \begin{center}\textbf{Screenshot Page 2}\end{center}\vfill \clearpage
+\clearpage \thispagestyle{plain} \null \vfill \begin{center}\textbf{Screenshot Page 3}\end{center}\vfill \clearpage
+\clearpage \thispagestyle{plain} \null \vfill \begin{center}\textbf{Screenshot Page 4}\end{center}\vfill \clearpage
+\clearpage \thispagestyle{plain} \null \vfill \begin{center}\textbf{Screenshot Page 5}\end{center}\vfill \clearpage
+
+\end{document}
+

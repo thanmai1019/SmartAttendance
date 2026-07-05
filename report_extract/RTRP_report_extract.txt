@@ -1,0 +1,534 @@
+
+
+===== PAGE 1 =====
+An Industrial Oriented Mini Project Report
+on
+YOUR TITLE HERE
+submitted in partial fulfillment of the requirements for the award of the degree of
+BACHELOR OF TECHNOLOGY
+in
+COMPUTER SCIENCE & ENGINEERING
+by
+ROLL NO Ms. Student Name
+ROLL NO Ms. Student Name
+ROLL NO Ms. Student Name
+Under the esteemed guidance of
+Dr./Ms./Mr. Guide Name
+Designation
+Department of Computer Science & Engineering
+BVRIT HYDERABAD College of Engineering for Women
+(NAAC Accredited-A Grade | NBA Accredited B.Tech. (EEE, ECE & CSE))
+(UGC Autonomous,Approved by AICTE, New Delhi and Affiliated to JNTUH, Hyderabad)
+Bachupally, Hyderabad – 500090
+April, 2026
+
+===== PAGE 2 =====
+BVRIT HYDERABAD
+College of Engineering for Women
+(NAAC Accredited-A Grade | NBA Accredited B.Tech. (EEE, ECE & CSE))
+(UGC Autonomous, Approved by AICTE, New Delhi and Affiliated to JNTUH, Hyderabad)
+Bachupally, Hyderabad – 500090
+Department of Computer Science & Engineering
+CERTIFICATE
+This is to certify that the Industrial Oriented Mini Project entitled “SMOOTHW AY
+: CONTEXT-A W ARE DRIVING COMFORT FOR ROUTE RECOMMENDA-
+TION” is a bonafide work carried out byMs. V . Yasasvi (23WH1A05G2), Ms. M.
+Lohitha (23WH1A05H5), and Ms. S. Shivani (24WH5A0516)in the partial fulfill-
+ment for the award of B.Tech. degree inComputer Science & Engineering,BVRIT
+HYDERABAD College of Engineering for Women, Bachupally, Hyderabad, affil-
+iated to Jawaharlal Nehru Technological University Hyderabad, Hyderabad under my
+guidance and supervision. The results embodied in this Industrial Oriented Mini Project
+work have not been submitted to any other University or Institute for the award of any
+degree or diploma.
+Internal Guide
+Dr. S. Vidyullatha
+Assistant Professor
+Department of CSE
+Head of the Department
+Dr. Aruna Rao S L
+Professor
+Department of CSE
+External Examiner
+2
+
+===== PAGE 3 =====
+DECLARATION
+We hereby declare that the work presented in this Industrial Oriented Mini
+Project entitled“TITLE”submitted towards completion of Industrial Oriented Mini
+Project work in III Year II Semester of B.Tech.in CSE at BVRIT HYDERABAD Col-
+lege of Engineering for Women, Hyderabad is an authentic record of our original work
+carried out under the guidance ofGuide Name, Designation, Department of CSE.
+Ms. Student Name
+(Roll No)
+Ms. Student Name
+(Roll No)
+Ms. Student Name
+(Roll No)
+
+===== PAGE 4 =====
+ACKNOWLEDGMENT
+We would like to express our sincere thanks toDr. K V N Sunitha, Principal,
+BVRIT HYDERABAD College of Engineering for Women, for providing the work-
+ing facilities in the college.
+Our sincere thanks and gratitude to our HoDDr.Aruna Rao S L, Professor, De-
+partment of CSE, BVRIT HYDERABAD College of Engineering for Womenfor
+all the timely support and valuable suggestions during the period of our project.
+We are extremely thankful and indebted to our internal guide,Guide Name, Des-
+ignation, Department of CSE, BVRIT HYDERABAD College of Engineering for
+Womenfor his/her constant guidance, encouragement, and moral support throughout
+the project.
+Finally, we would also like to thank ourIndustrial Oriented Mini Project Coor-
+dinators name1, name2, all the faculty members and staff of CSE Department who
+helped us directly or indirectly, parents and friends for their cooperation in completing
+the project work.
+Ms.Student Name
+(Roll No)
+Ms.Student Name
+(Roll No)
+Ms.Student Name
+(Roll No)
+
+===== PAGE 5 =====
+ABSTRACT
+The abstract should be one page synopsis of the thesis typed one and a half line
+spacing, Font Style: Times New Roman and Font Size: 12. The abstract is a very brief
+summary of the thesis contents. It should be about one page long not more than 300
+words. The 300-word statement should describe the problem addressed by your thesis,
+a description of the work completed and a summary of any findings or lessons learned.
+The format is given in Appendix D.
+Keywords:Thesis,Dissertation,Degree,Sample Thesis,Literature.
+ii
+
+===== PAGE 6 =====
+TABLE OF CONTENTS
+ABSTRACT. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ii
+LIST OF FIGURES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . v
+LIST OF TABLES. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . vi
+LIST OF TERMS AND ABBREVIATIONS. . . . . . . . . . . . . . . vii
+1 CHAPTER TITLE 1
+1.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2 Add section name if required . . . . . . . . . . . . . . . . . . . . . . 1
+2 CHAPTER TITLE 2
+2.1 Review of literature . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2.2 Review types . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2.2.1 Process and product . . . . . . . . . . . . . . . . . . . . . . . . 3
+2.3 Page limitation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+3 CHAPTER TITLE 4
+3.1 Paraphrasing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+3.2 Quotations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+3.2.1 Quotation and reference to earlier work . . . . . . . . . . . . . . 4
+3.2.2 Use of abbreviations . . . . . . . . . . . . . . . . . . . . . . . . 4
+3.3 References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+3.3.1 Citation format . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+4 CHAPTER TITLE 7
+4.0.1 Printing standard . . . . . . . . . . . . . . . . . . . . . . . . . 7
+4.1 Page numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+4.2 Font . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+4.3 Paragraphs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+iii
+
+===== PAGE 7 =====
+4.4 Line spacing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+4.5 Headings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+5 CHAPTER TITLE 9
+5.1 Tables in thesis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+5.2 Math equation in thesis . . . . . . . . . . . . . . . . . . . . . . . . . 10
+6 CHAPTER TITLE 11
+6.1 Figure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+6.2 Graph . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+7 CHAPTER TITLE 13
+7.1 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+REFERENCES 13
+LIST OF PUBLICATIONS 15
+Appendices
+Appendix A Sample Code 17
+iv
+
+===== PAGE 8 =====
+LIST OF FIGURES
+6.1 Sample picture of universe . . . . . . . . . . . . . . . . . . . . . . . . 12
+6.2 Sample graph . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+v
+
+===== PAGE 9 =====
+LIST OF TABLES
+4.1 Total Number of Pages in the Thesis . . . . . . . . . . . . . . . . . . . 7
+5.1 Country List . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+5.2 Data units, sources, and dates . . . . . . . . . . . . . . . . . . . . . . . 10
+vi
+
+===== PAGE 10 =====
+LIST OF TERMS AND ABBREVIATIONS
+MPCModel Predictive Control
+TLAThree Letter Acronym
+SVMSupport Vector Machine
+vii
+
+===== PAGE 11 =====
+CHAPTER 1
+CHAPTER TITLE
+1.1 Introduction
+Write content
+1.2 Add section name if required
+1
+
+===== PAGE 12 =====
+CHAPTER 2
+CHAPTER TITLE
+2.1 Review of literature
+A literature review is a text of a scholarly paper, which includes the current knowledge
+including substantive findings, as well as theoretical and methodological contributions
+to a particular topic [1]. Literature reviews are secondary sources, and do not report new
+or original experimental work. Most often associated with academic-oriented literature,
+such reviews are found in academic journals, and are not to be confused with book
+reviews that may also appear in the same publication. Literature reviews are a basis
+for research in nearly every academic field. A narrow-scope literature review may be
+included as part of a peer-reviewed journal article presenting new research, serving to
+situate the current study within the body of the relevant literature and to provide context
+for the reader. In such a case, the review usually precedes the methodology and results
+sections of the work.
+Producing a literature review may also be part of graduate and post-graduate student
+work, including in the preparation of a thesis, dissertation, or a journal article. Literature
+reviews are also common in a research proposal or prospectus (the document that is
+approved before a student formally begins a dissertation or thesis).
+2.2 Review types
+The main types of literature reviews are: evaluative, exploratory, and instrumental.
+A fourth type, the systematic review, is often classified separately, but is essentially
+a literature review focused on a research question, trying to identify, appraise, select and
+synthesize all high-quality research evidence and arguments relevant to that question.
+A meta-analysis is typically a systematic review using statistical methods to effectively
+combine the data used on all selected studies to produce a more reliable result.
+2
+
+===== PAGE 13 =====
+2.2.1 Process and product
+distinguish between the process of reviewing the literature and a finished work or prod-
+uct known as a literature review. The process of reviewing the literature is often ongoing
+and informs many aspects of the empirical research project. All of the latest literature
+should inform a research project. Scholars need to be scanning the literature long after
+a formal literature review product appears to be completed.
+2.3 Page limitation
+A careful literature review is usually 15 to 30 pages and could be longer. The process of
+reviewing the literature requires different kinds of activities and ways of thinking and
+link the activities of doing a literature review with Benjamin Bloom’s revised taxon-
+omy of the cognitive domain (ways of thinking: remembering, understanding, applying,
+analysing, evaluating, and creating).
+3
+
+===== PAGE 14 =====
+CHAPTER 3
+CHAPTER TITLE
+3.1 Paraphrasing
+content
+3.2 Quotations
+When you have borrowed words, facts, or idea of any kind from someone else’s work,
+acknowledge your debt by giving your source credit in footnote (or in running text
+as cited reference). Otherwise, you will be guilty of plagiarism. Also, be sure you
+have represented the original material honestly and accurately. Direct word to word
+quotations are enclosed in quotation marks."
+When you use programs written by others with or without modifications, the re-
+port/thesis must clearly bring this out with proper references, and must also reflect the
+extent of modification introduced by you, if any. A modified program is not entirely
+yours. Only a program, which you write from scratch, does not require source to be
+identified. Identification of source in all other cases is must. Standard subroutines
+(even if public domain) used in your programs must be properly referenced. Although
+programs need not be appended to the thesis, they must be submitted to your research
+supervisor in hard copy and other media. Inclusion of a computational flow chart in
+your thesis is highly recommended, however.
+3.2.1 Quotation and reference to earlier work
+3.2.2 Use of abbreviations
+In Chapters, while introducing abbreviations, follow:
+\newacronym{URL}{URL}{Uniform Resource Locator}
+and in chapters it can be used as:
+4
+
+===== PAGE 15 =====
+\gls{URL}
+Which produces the following output first time when you call it:
+and simply each subsequent time.
+3.3 References
+Choose a respected journal in your field in which title of the paper also appear in the
+list of references and consistently follow the citation style used by this journal. Names
+of all the authors with their initials, title of the article, names of editors for edited books
+or proceedings, and the range of pages that contain the referenced material must appear
+in the bibliography. You should not mix citation styles of several journals and not to
+create your own style.
+3.3.1 Citation format
+All references and citation should be of the standard "Harvard Style" (Author, Year)’
+format.
+3.3.1.1 Single author citation
+• Citation at the beginning of the sentence
+–Jones (2011) emphasized that citations in a text should be consistent.
+• Citation at the End of the Sentence:
+–It was emphasized that citations in a text should be consistent (Jones, 2011).
+3.3.1.2 Double authors citation
+• Citation at the beginning of the sentence
+–Jones and Baker (2011) emphasized that citations in a text should be con-
+sistent.
+• Citation at the End of the Sentence
+–It was emphasized that citations in a text should be consistent (Jones and
+Baker, 2011).
+3.3.1.3 More than two authors citation
+• Citation at the beginning of the sentence
+–Jones et al. (2011) emphasized that citations in a text should be consistent.
+• Citation at the End of the Sentence
+5
+
+===== PAGE 16 =====
+–It was emphasised that citations in a text should be consistent (Jones et al.,
+2011).
+3.3.1.4 Sources written in the same year by the same author(s)
+• It was emphasized that citations in a text should be consistent (Jones, 1998a). In
+a work published later that year, Jones (1998b) proposed that...
+• It was emphasized that citations in a text should be consistent (Jones, 1998a;
+1998b).
+3.3.1.5 Sources written by same author(s) in different Year(s)
+• (Smith, 2013; 2005; 2001)
+6
+
+===== PAGE 17 =====
+CHAPTER 4
+CHAPTER TITLE
+Table 4.1Total Number of Pages in the Thesis
+Course Color of Art
+Paper Total Number of Pages in the Thesis
+Ph D White Min. of 100 (Excluding References, Appendices and
+Front pages)
+M Phil / M.Tech
+[By Research] White Min. of 80 - Max. of 200 (Excluding References,
+Appendices and Front pages)
+4.0.1 Printing standard
+For Initial Submission : JK Bond Sheet
+For Final Submission : Executive Bond Sheet
+4.1 Page numbers
+All text pages as well as program source code listings should be numbered using Arabic
+numerals at the bottom center of the pages.
+4.2 Font
+Times New Roman 12pt font should be used consistently throughout the text. Captions
+for tables and figures can be in smaller fonts, but not smaller than 10pt.
+4.3 Paragraphs
+No paragraph should have its opening line at the bottom of a page. A clear, consistent,
+but not too large a separation must be provided between the paragraphs throughout the
+thesis.
+7
+
+===== PAGE 18 =====
+4.4 Line spacing
+The line spacing used should be the same throughout the text, and can be chosen to be
+1.5. The lines in captions for figures and tables, Table of Contents, List of Figures, and
+List of Tables should be 1.5 line spacing.
+4.5 Headings
+Chapter Number Font Size: 14, Times New Roman, CAPS, bold
+Chapter Heading Font Size: 16, Bold, Times New Roman, CAPS
+Section Heading Font Size: 14, Times New Roman, Sentence Case
+Subsection Heading Font Size: 12, Bold, Times New Roman, Sentence Case
+8
+
+===== PAGE 19 =====
+CHAPTER 5
+CHAPTER TITLE
+5.1 Tables in thesis
+• All Table Caption should be in Sentence Case, TNR 10 Pt. It should be of the
+Format:
+–Table 1.1 Results of the experiment . . . .(Centered)
+• It should be cited as Table 1.1.
+• Caption should appear above the Table.
+• Table Header and the entries should be of Font TNR 10 Pt, Justified.
+• For wider Table, the page orientation can be Landscape.
+• For Larger Table, it can run to pages and the header should be repeated for each
+page of the Table.
+• Table must be adjusted to fit in the page and no single row is left out for a new
+page.
+Sample Table 5.1 and Table 5.2 are given below for your reference,
+Table 5.1Country List
+Country Name or
+Area Name
+ISO ALPHA 2
+Code
+ISO ALPHA 3
+Code ISO numeric Code
+Afghanistan AF AFG 004
+Aland Islands AX ALA 248
+Albania AL ALB 008
+Algeria DZ DZA 012
+American Samoa AS ASM 016
+Andorra AD AND 020
+Angola AO AGO 024
+9
+
+===== PAGE 20 =====
+Table 5.2Data units, sources, and dates
+Variable Dates Units Source
+Nominal Physi-
+cal Capital Stock 1950-1990 Billions US$
+Nehru and
+Dhareshwar
+(1993)
+Total Population 1950-1990 Billions
+Nehru and
+Dhareshwar
+(1993)
+Nominal GDP 1950-1990 Billions US$ PWT
+Real GDP per
+capita 1950-1990 2005 US$ per
+capita PWT
+5.2 Math equation in thesis
+All equation should be written using equation editor or using an equivalent tool.
+• Equations should be numbered as : 1.1, 1.2 ...
+• Equation should be Centered, 12 Pt, TNR.
+• Equation number should be right Justified
+• It should be cited as Eqn. 1.1.
+• If the sentence starts by citing an equation, then it should be written as Equation
+1.1 For example, Equation 5.1 states the Pythagoras theorem.
+For example in Eqn. 5.1, The well known Pythagorean theoremx 2 +y 2 =z 2 was
+proved to be invalid for other exponents. Meaning the next equation has no integer
+solutions:
+xn +y n =z n (5.1)
+The mass-energy equivalence is described by the famous equation in Eqn. 5.2
+E=mc 2 (5.2)
+discovered in 1905 by Albert Einstein.
+10
+
+===== PAGE 21 =====
+CHAPTER 6
+CHAPTER TITLE
+6.1 Figure
+• All Figure Caption should be in the Sentence Case, TNR 10 pt, and it should be
+of the Format: Fig Chapter Number.Figure Number Figure Caption
+• It should be cited as Fig. 6.1 Caption must appear below the Figure.
+• For Smaller: (4 Figures arranged in Two Columns) / Page; Portrait Mode.
+• For Medium: (2 Figures arranged one below the other / Page; Portrait Mode.
+• For Larger: 1 Figure / Page; Landscape Mode.
+• Figure Label should be in Font TNR 10 pt, Bold.
+• Figure Resolution should be minimum of 300 DPI.
+• If the sentence starts by citing a figure, then it should be written as Figure 6.1.
+For example, Figure 6.1 shows a sample picture of universe.
+For example, The universe is immense and it seems to be homogeneous, in a large
+scale, everywhere we look at.
+There’s a picture of a galaxy in Fig. 6.1
+6.2 Graph
+Another example is given in Fig. 6.2
+11
+
+===== PAGE 22 =====
+Fig. 6.1Sample picture of universe
+Fig. 6.2Sample graph
+12
+
+===== PAGE 23 =====
+CHAPTER 7
+CHAPTER TITLE
+7.1 Conclusion
+This section will need to have several elements, including:
+• A brief summary, just a few paragraphs, of your key findings, related back to what
+you expected to see (essential);
+• The conclusions which you have drawn from your research (essential);
+• Why your research is important for researchers and practitioners (essential);
+• Recommendations for future research (strongly recommended, verging on essen-
+tial);
+• Recommendations for practitioners (strongly recommended in management and
+business courses and some other areas, so check with your supervisor whether
+this will be expected); and a final paragraph rounding off your dissertation or
+thesis.
+13
+
+===== PAGE 24 =====
+References
+[1] S. J. Slavin, D. L. Schindler, and J. T. Chibnall, “Medical student mental health
+3.0: improving student wellness through curricular changes,”Academic Medicine,
+vol. 89, no. 4, pp. 573–577, 2014.
+14
+
+===== PAGE 25 =====
+LIST OF PUBLICATIONS RELEV ANT TO THE THESIS
+1. Slavin, S. J., Schindler, D. L., & Chibnall, J. T. (2014). Medical student mental
+health 3.0: improving student wellness through curricular changes. Academic
+Medicine, 89(4), 573-577.
+(List of publication should not contain communicated papers and under review papers)
+15
+
+===== PAGE 26 =====
+Appendices
+16
+
+===== PAGE 27 =====
+Appendix A
+Sample Code
+def calculate_area(shape, dimensions):
+"""
+This function calculates the area of a shape based on its
+type and dimensions.
+Args:
+shape (str): The type of shape (e.g., "rectangle",
+"circle").
+dimensions (list): A list containing the shape’s
+dimensions.
+Returns:
+float: The calculated area of the shape.
+"""
+if shape == "rectangle":
+length, width = dimensions
+return length * width
+elif shape == "circle":
+radius = dimensions[0]
+return 3.14159 * radius ** 2
+else:
+print(f"Error: Unsupported shape ’{shape}’.")
+return None
+def analyze_text(text):
+"""
+This function analyzes a text string and returns some basic
+statistics.
+Args:
+text (str): The text string to be analyzed.
+17
+
+===== PAGE 28 =====
+Returns:
+dict: A dictionary containing the number of words,
+characters, and uppercase letters.
+"""
+words = len(text.split())
+chars = len(text)
+uppercase = sum(1 for char in text if char.isupper())
+return {"words": words, "characters": chars, "uppercase":
+uppercase}
+def create_shopping_list(items, quantities=None):
+"""
+This function creates a shopping list with items and
+optional quantities.
+Args:
+items (list): A list of items to include in the shopping
+list.
+quantities (list, optional): A list of corresponding
+quantities for each item.
+Returns:
+str: The formatted shopping list string.
+"""
+shopping_list = ""
+if quantities:
+for item, quantity in zip(items, quantities):
+shopping_list += f"- {quantity} {item}\n"
+else:
+for item in items:
+shopping_list += f"- {item}\n"
+return shopping_list.rstrip()
+# Example usage
+shapes = [("rectangle", [5, 3]), ("circle", [4])]
+for shape, dimensions in shapes:
+area = calculate_area(shape, dimensions)
+if area:
+print(f"The area of the {shape} is: {area:.2f}")
+18
+
+===== PAGE 29 =====
+text_data = analyze_text("This is a sample text string for
+analysis.")
+print(f"The text contains: {text_data[’words’]} words,
+{text_data[’characters’]} characters, and
+{text_data[’uppercase’]} uppercase letters.")
+shopping_items = ["Milk", "Bread", "Eggs", "Apples"]
+shopping_list = create_shopping_list(shopping_items)
+print("\nShopping List:")
+print(shopping_list)
+19
